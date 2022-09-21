@@ -18,7 +18,7 @@ class CustomerController extends Controller
     }
     public function search($key)
     {
-        return Customer::where('trade_name', 'Like', "%$key%")->orwhere('company_name', 'Like', "%$key%")->orwhere('customer_name', 'Like', "%$key%")->get();
+        return Customer::where('trade_name', 'Like', "%$key%")->orwhere('company_name', 'Like', "%$key%")->orwhere('customer_name', 'Like', "%$key%")->orwhere('ref_number', 'Like', "%$key%")->get();
     }
 
     public function store(Request $request)

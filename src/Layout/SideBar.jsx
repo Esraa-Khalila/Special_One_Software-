@@ -1,6 +1,7 @@
 import styles from "./SiderBar.module.css";
 import Dropdown from "../UI/DropDown";
 import { useState } from "react";
+import { Icon } from "@iconify/react";
 
 const SideBar = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -24,13 +25,13 @@ const SideBar = () => {
             setIsOpen(!isOpen);
           }}
         >
-          Menu
+          <Icon icon="cil:hamburger-menu" />
         </div>
       ) : (
         ""
       )}
 
-      <a className={styles.title} href="#/">
+      <a className={styles.title} href="/">
         Admin
       </a>
       <hr />

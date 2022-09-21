@@ -45,18 +45,19 @@ const AddCustomerForm = () => {
           showConfirmButton: false,
           timer: 1500,
         }).then(function () {
-          window.location.href = "/";
+          window.location.href = "/customer";
         });
 
         setError([]);
       } else {
+        setError(res.data.validateError);
         swal({
           icon: "error",
           title: "Oops...",
           text: "Something went wrong!",
         });
         console.log(res.data.validateError);
-        setError(res.data.validateError);
+     
       }
     });
   };
@@ -71,7 +72,7 @@ const AddCustomerForm = () => {
         <Input
           type="text"
           value={customer_name}
-          placeholder="Product Name"
+          placeholder="customer Name"
           label="Name"
           name="customer_name"
           onChange={(e) => setCustomerName(e.target.value)}
@@ -85,7 +86,7 @@ const AddCustomerForm = () => {
           name="company_name"
           onChange={(e) => setCompanyName(e.target.value)}
         />
-        <span className="text__danger">{error.expiry_date}</span>
+        <span className="text__danger">{error.company_name}</span>
         <Input
           type="text"
           value={trade_name}
@@ -94,7 +95,7 @@ const AddCustomerForm = () => {
           name="trade_name"
           onChange={(e) => setTradeName(e.target.value)}
         />
-        <span className="text__danger">{error.expiry_date}</span>
+        <span className="text__danger">{error.trade_name}</span>
         <Input
           type="file"
           value={logo}
@@ -103,7 +104,7 @@ const AddCustomerForm = () => {
           onChange={(e) => setLogo(e.target.value)}
           id="files"
         />
-        <span className="text__danger">{error.expiry_date}</span>
+        <span className="text__danger">{error.logo}</span>
         <Input
           type="file"
           value={Trade_Register_image}
@@ -112,14 +113,14 @@ const AddCustomerForm = () => {
           onChange={(e) => setTradeRegisterImage(e.target.value)}
           id="files"
         />
-        <span className="text__danger">{error.expiry_date}</span>
+        <span className="text__danger">{error.Trade_Register_image}</span>
         <Input
           type="file"
           label="contract_image"
           name="images"
           onChange={handleChange}
         />
-        <span className="text__danger">{error.expiry_date}</span>
+        <span className="text__danger">{error.contract_image}</span>
         <Button styles={"btn__primary"} type="submit">
           Add
         </Button>

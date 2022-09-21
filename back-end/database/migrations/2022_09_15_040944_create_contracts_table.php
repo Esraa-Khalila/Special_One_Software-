@@ -21,10 +21,9 @@ class CreateContractsTable extends Migration
             $table->decimal('value');
             $table->boolean('VIP');
             $table->string('contract_period');
-            $table->unsignedInteger('customer_id')->nullable()->unsigned()->index();
+            $table->unsignedInteger('customer_id')->unsigned();
             $table->foreign('customer_id')->references('id')->on('customers')->onDelete('cascade');
             $table->timestamps();
-            $table->engine = 'InnoDB'; 
         });
     
     }

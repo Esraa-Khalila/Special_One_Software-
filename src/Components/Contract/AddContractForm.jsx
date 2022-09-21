@@ -38,7 +38,7 @@ const AddContractForm = () => {
           showConfirmButton: false,
           timer: 1500,
         }).then(function () {
-          window.location.href = "/";
+          window.location.href = "/contract";
         });
 
         setError([]);

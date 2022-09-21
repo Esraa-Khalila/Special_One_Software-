@@ -1,0 +1,20 @@
+.form__control {
+  display: block;
+  border-radius: 10px;
+  width: 100%;
+  border: 1px solid var(--primary-color);
+  outline: none;
+
+  padding: 0.9rem;
+}
+.select_customer{
+    font-size: 1rem;
+    margin: 3% 6.3%;
+}
+.input_vip{
+   margin: 0 6.6%; 
+   font-size: 1.2rem;
+}
+.input_vip label{
+  padding-left: 2%;
+}

@@ -1,0 +1,25 @@
+.btn {
+  color: var(--text-white);
+  padding: 1.3rem;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  margin: 1rem;
+  border-radius: 1rem;
+  width: 15%;
+}
+.btn__primary {
+  background-color: var(--primary-color);
+}
+.btn__secondary {
+  background-color: rgb(152, 40, 40);
+}
+.btn__dropdown {
+  background-color: var(--primary-color);
+  padding: .7rem;
+}
+.btn__search {
+  background-color: var(--primary-color);
+  width:50%;
+  margin-left:25% ;
+}

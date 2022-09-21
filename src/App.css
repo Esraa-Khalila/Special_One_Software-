@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Noto+Serif&family=Old+Standard+TT:ital@1&family=Poppins:wght@300;400&family=Sail&display=swap");
+:root {
+  --primary-color: #09476b;
+  --text-white: white;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.App {
+  display: flex;
+  position: relative;
+}
+input::placeholder {
+  font-size: 1.2rem;
+}
+.text__danger {
+  color: rgb(152, 40, 40);
+  margin: 7%;
+}

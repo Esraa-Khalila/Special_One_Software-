@@ -1,0 +1,34 @@
+.title {
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--text-white);
+}
+.sidebar {
+  background: rgb(5, 68, 104);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  padding: 20px 0;
+  transition: all 0.5s ease;
+}
+.sidebar a {
+  display: block;
+  padding: 60px;
+  text-decoration: none;
+}
+.dropdown__text {
+  font-size: 3rem;
+}
+.isMobile {
+  position: absolute;
+  height: 100vh;
+  left: -400px;
+}
+
+.test {
+  position: fixed;
+  left: 0;
+  top: 20px;
+}
